@@ -20,7 +20,10 @@ router.get('/hello', function (req, res, next) {
 });
 
 router.get('/global', function(req, res, next) {
-  process.env.tutorial
+  var data = {
+    process.env.tutorial
+  };
+  res.send(data);
 });
 
 module.exports = router;
