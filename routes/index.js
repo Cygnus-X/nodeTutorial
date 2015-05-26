@@ -19,4 +19,8 @@ router.get('/hello', function (req, res, next) {
   res.send(data);
 });
 
+router.get('/global', function(req, res, next) {
+  process.env.tutorial
+});
+
 module.exports = router;
