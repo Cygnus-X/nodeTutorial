@@ -21,7 +21,7 @@ router.get('/hello', function (req, res, next) {
 
 router.get('/global', function(req, res, next) {
   var data = {
-    process.env.forKey
+    global: "Global"
   };
   res.send(data);
 });
